@@ -1,4 +1,4 @@
-package EjerciciosFicheros;
+package ejerciciosFicheros;
 
 import java.io.*;
 import java.util.Scanner;
@@ -12,15 +12,15 @@ public class Ejercicio1 {
 		String route = sc.nextLine();
 		File newFile = new File(route);
 		
-		try(FileReader reader = new FileReader(newFile)){
-			int caracter;
-			
-			while((caracter = reader.read()) != -1) {
+		try(FileReader reader = new FileReader(newFile)){			
+			while(reader.read() != -1) {
 				count ++;
 			}
-			System.out.print(count);
+		System.out.print("El archivo contiene: " + count);
 		} catch (FileNotFoundException e) {
-			System.out.println("Ha ocurrido un error");
+			System.out.println("ERROR - No se ha encontrado el archivo: " + e.getMessage());
+		} catch (IOException e1) {
+			System.out.println("ERROR: No se ha podido leer el archivo correctamente" + e1.getMessage());
 		}
 		sc.close();
 	}
