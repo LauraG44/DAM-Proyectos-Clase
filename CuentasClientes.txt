@@ -1,0 +1,6 @@
+Código	Nombre	Importe Bono
+------- -------	------------
+100 Batman  450
+110 Sherlock Holmes 225
+120 Homer Simpson   150
+130 Mafalda 325

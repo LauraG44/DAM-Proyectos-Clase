@@ -1,4 +1,4 @@
-package ejerciciosFicheros;
+package ejerciciosFicheros.ej2;
 
 import java.util.Scanner;
 import java.io.*;
